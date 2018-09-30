@@ -1,7 +1,8 @@
 # typescript-koa
 
-typescript koa 实践
+这是一个 typescript koa 实践案例。
 
+![截图](20180930162233.png)
 
 ## start
 
@@ -19,7 +20,7 @@ yarn install
 npm run lint
 ```
 
-> vscode 默认不会检测
+> vscode 默认不会检测 eslint，需要在配置里开启ts检测
 
 ```json
 "eslint.validate": [
@@ -28,6 +29,14 @@ npm run lint
   "typescript"
 ]
 ```
+
+**development**
+
+
+```ls
+npm run dev
+```
+
 Hot update development.
 
 **compile**

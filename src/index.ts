@@ -1,5 +1,4 @@
 'use strict'
-import 'dotenv'
 import './config'
 import { format } from './utils'
 import app from './app'

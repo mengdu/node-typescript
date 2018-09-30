@@ -11,7 +11,7 @@ app.use(responseTime)
 app.use(router.routes())
 app.use(router.allowedMethods())
 
-app.on('error', (err, ctx) => {
+app.on('error', (err: any, ctx: any) => {
   console.error(err)
 
   ctx.body = 'Error !'

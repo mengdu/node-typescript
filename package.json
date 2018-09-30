@@ -8,6 +8,7 @@
     "dev": "nodemon --watch src/**/* -e ts,tsx --exec ts-node src/index.ts",
     "compile": "npm run clean && tsc",
     "lint": "eslint src --ext .ts",
+    "lintfix": "eslint src --ext .ts --fix",
     "clean": "rm dest -rf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

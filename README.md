@@ -14,10 +14,20 @@ npm install
 yarn install
 ```
 
-**development**
+**lint**
 
 ```ls
-npm run dev
+npm run lint
+```
+
+> vscode 默认不会检测
+
+```json
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "typescript"
+]
 ```
 
 **development**

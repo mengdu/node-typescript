@@ -1,19 +1,13 @@
 'use strict'
-import Demo from './lib/demo'
+import 'dotenv'
+import './config'
+import { format } from './utils'
+import app from './app'
 
-function say (str: string) : any {
-  console.log(str)
-}
+const port = Number(process.env.PORT || 4000)
 
-const text:string = 'Wellcome use typescript !'
+app.listen(port)
 
-console.log(text)
-
-const demo: Demo = new Demo('admin', 23, 'This is test acount.')
-
-console.log(demo)
-demo.print()
-demo.set('age', 24)
-demo.set('name', 'root')
-demo.print()
-export default demo
+console.log('Start at: ' + format(Date.now(), 'yyyy-MM-dd HH:mm:ss.ms'))
+console.log('NODE_ENV: ' + process.env.NODE_ENV)
+console.log('Listen on: ' + port)

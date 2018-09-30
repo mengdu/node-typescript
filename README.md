@@ -1,10 +1,9 @@
-# typescript-node
+# typescript-koa
 
-typescript node 实践
+typescript koa 实践
 
 
 ## start
-
 
 **install**
 
@@ -12,12 +11,6 @@ typescript node 实践
 npm install
 # or
 yarn install
-```
-
-**development**
-
-```ls
-npm run dev
 ```
 
 **development**

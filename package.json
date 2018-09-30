@@ -1,11 +1,12 @@
 {
-  "name": "node-typescript",
+  "name": "node-typescript-koa",
   "version": "1.0.0",
-  "description": "typescript node 实践",
+  "description": "Typescript node koa 实践",
   "main": "index.js",
   "scripts": {
     "start": "tsc && node index.js",
     "dev": "nodemon --watch src/**/* -e ts,tsx --exec ts-node src/index.ts",
+    "dev-debug": "nodemon --inspect --watch src/**/* -e ts,tsx --exec node -r ts-node/register src/index.ts",
     "compile": "npm run clean && tsc",
     "clean": "rm dest -rf",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +14,15 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.32",
     "@types/node": "^10.11.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "koa": "^2.5.3",
+    "koa-router": "^7.4.0"
   }
 }
